@@ -21,5 +21,6 @@ public class BasketTest {
         basket.add("Coca Cola", 20);
         Assertions.assertTrue(basket.items.containsKey("Banana"));
         Assertions.assertTrue(basket.items.containsKey("Coca Cola"));
+        Assertions.assertFalse(basket.items.containsKey("Unknown item"));
     }
 }
