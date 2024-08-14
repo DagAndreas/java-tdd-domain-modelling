@@ -11,4 +11,7 @@ public class Basket {
         return alreadyInBasket;
     }
 
+    public int total(){
+        return 0;
+    }
 }

@@ -30,7 +30,7 @@ public class BasketTest {
         basket.add("Banana", 10);
         basket.add("Coca Cola", 20);
 
-        Assertions.assertEquals(testTotal(), 30);
+        Assertions.assertEquals(basket.total(), 30);
 
     }
 }
