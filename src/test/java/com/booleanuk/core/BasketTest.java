@@ -32,9 +32,9 @@ public class BasketTest {
 
         Assertions.assertEquals(basket.total(), 30);
 
-        Assertions.assertNotEquals(basket.total(), 45);
+        Assertions.assertNotEquals(basket.total(), 45); // should not be 45 yet
         basket.add("kaptein sabeltann is", 15);
-        Assertions.assertEquals(basket.total(), 45);
+        Assertions.assertEquals(basket.total(), 45); // should now be 45
 
     }
 }
