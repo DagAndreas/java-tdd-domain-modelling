@@ -19,6 +19,7 @@ public class BasketTest {
         Basket basket = getTestBasket();
         basket.add("Banana", 10);
         basket.add("Coca Cola", 20);
-        Assertions.assertTrue(basket.items.contains("Banana"));
+        Assertions.assertTrue(basket.items.containsKey("Banana"));
+        Assertions.assertTrue(basket.items.containsKey("Coca Cola"));
     }
 }
