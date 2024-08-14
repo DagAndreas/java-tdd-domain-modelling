@@ -12,6 +12,10 @@ public class Basket {
     }
 
     public int total(){
-        return 0;
+        int total = 0;
+        for(int price: items.values()){
+            total = total + price;
+        }
+        return total;
     }
 }
